@@ -13,7 +13,7 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-     <p>백엔드 스터디를 진행하면서 공부한 것을 기록하며 공유하는 공간입니다.</p>
+     📖  📚  ✏️ 👨‍👦‍👦  
 
   header_text_feature_image:
   footer_text: >
@@ -21,7 +21,7 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: "peachberry0318@gmail.com"
+  email_address:
   behance:
   bitbucket:
   dribbble:
@@ -70,7 +70,7 @@ theme_settings:
 
 # PAGINATION
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "/page:num/"
 
 # BUILD SETTINGS
 markdown: kramdown
@@ -78,7 +78,8 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate-v2
 exclude:
   - Gemfile
   - Gemfile.lock

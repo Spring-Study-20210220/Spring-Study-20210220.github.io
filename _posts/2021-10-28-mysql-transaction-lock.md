@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Transaction and Lock
+category: mysql
+excerpt_separator: <!--more-->
 ---
 
+<!--more-->
 # 트랜잭션
 ---
 ## 트랜잭션이란..
@@ -17,12 +20,38 @@ title: Transaction and Lock
 ## 트랜잭션 격리 수준
 
 **3가지 부정합 문제**  
-격리수준 / 문제점  | Dirty Read | Non-Repeatable Read | Phantom Read
-------------- | ------------- | ------------- | -------------
-Read Uncommitted  | 발생 | 발생 | 발생 
-Read Committed  | 없음 | 발생 | 발생
-Repeatable Read  | 없음 | 없음 | 발생(InnoDB 는 없음)
-Serializable  | 없음 | 없음 | 없음
+<table>
+    <tr>
+        <th>격리수준 / 문제점</th>
+        <th>Dirty Read</th>
+        <th>Non-Repeatable Read</th>
+        <th>Phantom Read</th>
+    </tr>
+    <tr>
+        <td>Read Uncommitted</td>
+        <td>발생</td>
+        <td>발생</td>        
+        <td>발생</td>        
+    </tr>
+    <tr>
+        <td>Read Committed</td>
+        <td>없음</td>
+        <td>발생</td>        
+        <td>발생</td>        
+    </tr>
+    <tr>
+        <td>Repeatable Read</td>
+        <td>없음</td>
+        <td>없음</td>        
+        <td>발생(InnoDB 는 없음)</td>        
+    </tr>
+    <tr>
+        <td>Serializable</td>
+        <td>없음</td>
+        <td>없음</td>        
+        <td>없음</td>        
+    </tr>
+</table>
 
 ### Read Uncommitted
 커밋되지 않은 상태의 데이터도 읽을 수 있는 단계를 이야기한다
