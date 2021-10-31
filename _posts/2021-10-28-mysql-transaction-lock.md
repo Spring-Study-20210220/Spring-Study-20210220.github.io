@@ -2,12 +2,14 @@
 layout: post
 title: Transaction and Lock
 category: mysql
+tags: [transaction, lock]
 excerpt_separator: <!--more-->
 ---
 
 <!--more-->
 # 트랜잭션
 ---
+
 ## 트랜잭션이란..
 두 개 이상의 쿼리든지 상관없이 논리적인 작업 셋 자체가  
 성공한 경우에는 모두 성공하든지 실패하는 경우에는 모두 실패하든지  
