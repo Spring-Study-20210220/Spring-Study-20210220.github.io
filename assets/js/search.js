@@ -31,7 +31,7 @@
 
   const createPostListingHtml = (postItem) => `
     <h2>
-      <a class='search-link' href='${postItem.url}'>${postItem.title}</a>
+      <a class='search-link' href='${postItem.url.substring(1)}'>${postItem.title}</a>
     </h2>
 
     <div class='meta'>
