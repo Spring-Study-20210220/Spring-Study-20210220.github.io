@@ -14,9 +14,10 @@ $background-color: #fff !default;
 $border-color: rgba(0, 0, 0, 0.1) !default; // rgba recommended if using feature images
 
 // Typography colours
-$text-color: #383838 !default;
-$link-color: #757575 !default;
+$text-color: #585858 !default;
+$link-color: #1a7ee2 !default;
 $selection-color: #D4D4D4 !default; // visible when highlighting text
+$header-color: #3f3f3f;
 
 // Tags color
 $tags-color: #b0b0b0 !default;
@@ -57,3 +58,6 @@ $white-700: #cfd2d6;
 $white-750: #dadee0;
 $white-800: #fafafa;
 $white-900: #f2f2f3;
+$border-color-dark: rgba(214, 214, 214, 0.1) !default;
+$text-color-dark: #dfdfdf;
+$header-color-dark: #ffffff;

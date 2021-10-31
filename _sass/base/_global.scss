@@ -17,21 +17,29 @@ html {
       background-color: $navy;
     }
 
-    body,
     .page__footer {
       background-color: $navy;
       color: $white-900;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: $white-800;
+    body {
+      color: $text-color-dark;
+      font-family: $font-family-main;
+      font-size: $font-size;
+      word-wrap: break-word;
+      background-color: $navy;
+    }
+
+    p {
+      strong {
+        color: $header-color-dark;
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: $font-family-headings;
+      color: $header-color-dark;
       a {
-        color: $white-800;
+        color: $header-color-dark;
       }
     }
 
@@ -142,6 +150,13 @@ html {
     .pagination--pager {
       color: $white-900;
     }
+
+    th, td {
+      padding: 0.5em 1em;
+      border: 1px solid $border-color-dark;
+      text-align: left;
+    }
+
   }
 }
 
@@ -172,6 +187,11 @@ div .highlight {
 ::-moz-selection {
   background: $selection-color;
 }
+p {
+  strong {
+    color: $header-color;
+  }
+}
 body {
   color: $text-color;
   font-family: $font-family-main;
@@ -182,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings;
   line-height: 1.2;
   margin: 0.67em 0;
+  color: $header-color;
   a {
     color: $text-color;
   }

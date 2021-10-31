@@ -1,6 +1,9 @@
 .tags {
   width: 100%;
   margin-top: 1em;
+  .tag-list-title {
+    color: #ff8a65;
+  }
   .tag {
     margin-right: 0.5em;
     color: $tags-color;
