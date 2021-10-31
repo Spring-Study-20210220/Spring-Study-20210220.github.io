@@ -1,10 +1,10 @@
-@import './variables';
+
 
 $navy: #2f3437;
-
 html {
+  
   transition: all 0.1s;
-
+  height: 100vh;
   body,
   .page__footer,
   .page__title {
@@ -12,6 +12,7 @@ html {
   }
 
   &.dark {
+    
     html {
       background-color: $navy;
     }
@@ -34,8 +35,24 @@ html {
       }
     }
 
+    .category-title {
+      color: rgb(151, 151, 151);
+    }
+
+    .tag-title {
+      color: rgb(151, 151, 151);
+    }
+
+    h3 .title {
+      color: #fff;
+    }
+
+    div .meta {
+      color: rgb(180, 180, 180);
+    }
+
     .call-out {
-      background-color: #181b1d;
+      background-color: #22272b;
     }
     .site-header {
       background-color: $navy;
@@ -131,9 +148,6 @@ figure {
 // For correct line number width in Github Gists
 .gist table tbody tr td {
   box-sizing: content-box;
-}
-html {
-  background: $background-color;
 }
 
 // Typography
