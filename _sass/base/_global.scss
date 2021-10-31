@@ -35,6 +35,15 @@ html {
       }
     }
 
+    .highlight {
+      background-color: $dark-highlight;
+      border-radius: 10px;
+    }
+
+    div .highlight {
+      padding: 5px;
+    }
+
     .category-title {
       color: rgb(151, 151, 151);
     }
@@ -149,7 +158,13 @@ figure {
 .gist table tbody tr td {
   box-sizing: content-box;
 }
-
+div .highlight {
+  padding: 5px;
+}
+.highlight {
+  background-color: $light-highlight;
+  border-radius: 10px;
+}
 // Typography
 ::selection {
   background: $selection-color;
